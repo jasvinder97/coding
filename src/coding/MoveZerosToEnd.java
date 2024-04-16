@@ -1,6 +1,7 @@
 package coding;
 
-import static com.example.demo.coding.ReverseArray.printArray;
+
+import static coding.ReverseArray.printArray;
 
 public class MoveZerosToEnd {
     public static void main(String[] args) {
