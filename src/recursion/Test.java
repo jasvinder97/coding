@@ -15,7 +15,7 @@ public class Test {
 //        reverse(original, 0, original.length - 1);
 //        printArray(original);
 //        System.out.println(palindrome("A man, a plan, a canal: Panama", 0));
-        System.out.println(fibonacci(5));
+//        System.out.println(fibonacci(5));
     }
 
     static void printArray(int[] a) {
