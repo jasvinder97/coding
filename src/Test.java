@@ -2,21 +2,15 @@ import java.util.Stack;
 
 public class Test {
     public static void main(String[] args) {
-/*        List<Integer> list = List.of(21, 3, 88, 4, 15, 76);
-        list.stream().sorted((o1, o2) -> {
-            if (o1 > o2) {
-                return 1;
-            } else
-                return -1;
-        }).collect(Collectors.toList()).forEach(integer -> System.out.println(integer));*/
 
-        System.out.println(string("{))}"));
+        int a = 10;
+        FunctionalInterface show = (n) -> {
+            System.out.println(n++ + a);
+        };
+        show.show(5);
     }
 
-//    {()}
-//    {[()]}
-//    {))}
-//
+    ;
 
     static boolean string(String s) {
         boolean isValid = true;
