@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class ValidateBrackets {
     public static void main(String[] args) {
-        areBracketsBalanced("())");
+        System.out.println(areBracketsBalanced("())"));
     }
 
     static boolean areBracketsBalanced(String expr) {
