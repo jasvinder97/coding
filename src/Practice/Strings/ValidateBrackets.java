@@ -8,11 +8,8 @@ public class ValidateBrackets {
     }
 
     static boolean areBracketsBalanced(String expr) {
-        // Using ArrayDeque is faster than using Stack class
         Stack<Character> stack
                 = new Stack<>();
-
-        // Traversing the Expression
         for (int i = 0; i < expr.length(); i++) {
             char x = expr.charAt(i);
 
@@ -21,10 +18,6 @@ public class ValidateBrackets {
                 stack.push(x);
                 continue;
             }
-
-            // If current character is not opening
-            // bracket, then it must be closing. So stack
-            // cannot be empty at this point.
             if (stack.isEmpty())
                 return false;
             char check;
@@ -40,7 +33,6 @@ public class ValidateBrackets {
                     if (check == '(' || check == '[')
                         return false;
                     break;
-
                 case ']':
                     check = stack.pop();
                     if (check == '(' || check == '{')
@@ -48,8 +40,6 @@ public class ValidateBrackets {
                     break;
             }
         }
-
-        // Check Empty Stack
         return (stack.isEmpty());
     }
 
