@@ -1,9 +1,24 @@
 package Practice.coding.array;
 
+import java.util.HashMap;
+
 public class SumOfElementsPairWise {
     public static void main(String[] args) {
-        int[] input = new int[]{1, 3, 7, 8, 9, 10, 11, 14, 16, 19};
-        checkDuplicates(input, 10);
+        int[] input = new int[]{6, 8, 3, 5, 2, 1};
+        System.out.println(twoSum(input, 16));
+    }
+
+    public static String twoSum(int[] arr, int target) {
+        HashMap<Integer, Integer> mpp = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+            int num = arr[i];
+            int moreNeeded = target - num;
+            if (mpp.containsKey(moreNeeded)) {
+                return "YES";
+            }
+            mpp.put(arr[i], i);
+        }
+        return "NO";
     }
 
     static void checkDuplicates(int[] input, int a) {
