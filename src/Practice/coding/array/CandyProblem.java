@@ -12,7 +12,7 @@ public class CandyProblem {
     }
 
     static int getCandyFromWrapper(int wrapper, int wrapperRequired) {
-        int newCandy = 0;
+        int newCandy;
         if (wrapper < wrapperRequired) {
             return 0;
         } else {

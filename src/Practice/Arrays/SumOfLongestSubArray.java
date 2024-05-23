@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class SumOfLongestSubArray {
     public static void main(String[] args) {
-        int[] array = {3, 1, 2, 4};
-        System.out.println(getSubArraysWithSum(array, 7));
+        int[] array = {3, 1, 2,6, 4};
+        System.out.println(getSubArraysWithSum(array, 8));
     }
 
     static int getSubArraysWithSum(int[] a, int k) {
@@ -47,7 +47,6 @@ public class SumOfLongestSubArray {
         }
         return maxLenght;
     }
-
 
 
 }
