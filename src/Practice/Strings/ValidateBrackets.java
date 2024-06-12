@@ -40,6 +40,7 @@ public class ValidateBrackets {
                     break;
             }
         }
+        System.out.println();
         return (stack.isEmpty());
     }
 
