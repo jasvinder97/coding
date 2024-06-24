@@ -7,9 +7,10 @@ import java.util.Set;
 
 public class Video1 {
     public static void main(String[] args) {
-        int[] a = {3, 1, 2};
+        int[] a = {3, 1, 1, 2, 2};
 //        Arrays.stream(leaders(a)).forEach(System.out::println);
-        leaders(a);
+//        leaders(a);
+        removeDuplicates(a);
     }
 
 

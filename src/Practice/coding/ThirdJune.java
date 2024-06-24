@@ -1,4 +1,4 @@
-package Practice;
+package Practice.coding;
 
 public class ThirdJune /*extends Thread*/ {
     public static void main(String[] args) {

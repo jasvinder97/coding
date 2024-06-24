@@ -6,6 +6,7 @@ public class LargestProduct {
         System.out.println(maxProduct(array));
     }
 
+// using two pointers
     static Integer maxProduct(int[] a) {
         int n = a.length;
         int pre = 1;

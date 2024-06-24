@@ -1,16 +1,13 @@
 package Practice.Strings;
 
-public class LongestCommonPrefix {
-}
 
 // A Java Program to find the longest common prefix
 
-class GFG {
+class LongestCommonPrefix {
 
     // A Function to find the string having the
     // minimum length and returns that length
-    static int findMinLength(String arr[], int n)
-    {
+    static int findMinLength(String arr[], int n) {
         int min = Integer.MAX_VALUE;
         for (int i = 0; i <= (n - 1); i++) {
             if (arr[i].length() < min) {
@@ -22,8 +19,7 @@ class GFG {
 
     static boolean allContainsPrefix(String arr[], int n,
                                      String str, int start,
-                                     int end)
-    {
+                                     int end) {
         for (int i = 0; i <= (n - 1); i++) {
             String arr_i = arr[i];
 
@@ -36,33 +32,19 @@ class GFG {
 
     // A Function that returns the longest common prefix
     // from the array of strings
-    static String commonPrefix(String arr[], int n)
-    {
+    static String commonPrefix(String arr[], int n) {
         int index = findMinLength(arr, n);
         String prefix = ""; // Our resultant string
-
-        // We will do an in-place binary search on the
-        // first string of the array in the range 0 to
-        // index
         int low = 0, high = index - 1;
         while (low <= high) {
-
-            // Same as (low + high)/2, but avoids
-            // overflow for large low and high
             int mid = low + (high - low) / 2;
-
             if (allContainsPrefix(arr, n, arr[0], low,
                     mid)) {
-                // If all the strings in the input array
-                // contains this prefix then append this
-                // substring to our answer
                 prefix = prefix
                         + arr[0].substring(low, mid + 1);
 
-                // And then go for the right part
                 low = mid + 1;
-            }
-            else // Go for the left part
+            } else // Go for the left part
             {
                 high = mid - 1;
             }
@@ -72,10 +54,9 @@ class GFG {
     }
 
     // Driver program to test above function
-    public static void main(String args[])
-    {
-        String arr[] = { "geeksforgeeks", "geeks", "geek",
-                "geezer" };
+    public static void main(String args[]) {
+        String arr[] = {"geeksforgeeks", "geeks", "geek",
+                "geezer"};
         int n = arr.length;
 
         String ans = commonPrefix(arr, n);

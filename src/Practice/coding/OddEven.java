@@ -1,4 +1,4 @@
-package Practice;
+package Practice.coding;
 
 @java.lang.FunctionalInterface
 public interface OddEven {

@@ -1,4 +1,4 @@
-package Practice;
+package Practice.coding;
 
 public interface FunctionalInterface {
 

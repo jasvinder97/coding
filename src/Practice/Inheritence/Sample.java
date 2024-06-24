@@ -2,13 +2,15 @@ package Practice.Inheritence;
 
 public class Sample {
     public static void main(String[] args) {
-   //     Car car = new Car();
+        Car car = new Car();
 //        Maruti maruti = new Maruti();
         Car m = new Maruti();
 //        m.startCar();
 //        car.startCar();
- //       car.startCar();
+        car.startCar();
         m.startCar();
+        Maruti maruti = new Maruti();
+        maruti.startCar();
     }
 }
 

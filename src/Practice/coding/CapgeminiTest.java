@@ -1,4 +1,4 @@
-package Practice;
+package Practice.coding;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,7 +17,7 @@ public class CapgeminiTest {
             if (student.isPresent()) {
                 System.out.println(student.get());
             } else {
-                System.out.println("Practice.Student is null");
+                System.out.println("Practice.coding.Student is null");
             }
         });
     }
@@ -39,7 +39,7 @@ class Student {
 
     @Override
     public String toString() {
-        return "Practice.Student{" +
+        return "Practice.coding.Student{" +
                 "rollNumber=" + rollNumber +
                 ", name='" + name + '\'' +
                 '}';
