@@ -9,7 +9,7 @@ public class Sample {
 //        car.startCar();
 //        car.startCar();
         m.startCar();
-//        Maruti maruti = new Maruti();
+        Maruti maruti = new Maruti();
 //        maruti.startCar();
 
     }
